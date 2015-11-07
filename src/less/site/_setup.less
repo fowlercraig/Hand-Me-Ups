@@ -71,6 +71,15 @@
   }
 }
 
+.color {
+  &-white {
+    color: @white;
+    &:hover {
+      color: @white;
+    }
+  }
+}
+
 // Mixins
 
 .font_size(@px_size) {
@@ -176,7 +185,6 @@ img.rounded {
 
 .centered {
   .center();
-  z-index: 9;
   &-full {
     width: 100%;
   }
@@ -200,6 +208,10 @@ img.rounded {
 
 .covered {
   .cover();
+  &-fixed {
+    position: fixed;
+    overflow: scroll;
+  }
 }
 
 .pinned {
@@ -207,5 +219,20 @@ img.rounded {
   width: 100%;
   &-bottom {
     bottom: 0;
+  }
+  &-top {
+    top: 0;
+  }
+}
+
+.swap-overlay {
+  opacity: 0;
+  pointer-events: none;
+  transition:200ms ease;
+  &.fs-swap {
+    &-active {
+      opacity: 1;
+      pointer-events: auto;
+    }
   }
 }

@@ -1,39 +1,13 @@
-body,html {
-   height: 100%;
-}
-
-#content {
-
-   &.fixed-header {
-
-      padding-top: 75px;
-
-   }
-
-}
-
-.home-module {
-
-   display: block;
-   background: @bgGray;
-   margin-top: @fs-grid-gutter*2 ;
-   margin-bottom: @fs-grid-gutter*2;
-
-   &.small {
-      height: 400px;
-   }
-
-   &.medium {
-      height: 800px + @spaced;
-   }
-
-}
-
-.section {
-
-   padding: @spaced*3 0;
-
-   &--compact {
-      padding: @spaced 0;
+#about {
+   .centered {
+      @media @min {
+         position: relative;
+         left: 0;
+         top: 0;
+         transform: translate(0%, 0%);
+      }
+      @media @tablet {
+         .center();
+      }
    }
 }
