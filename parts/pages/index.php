@@ -1,4 +1,4 @@
-<div id="splash" class="covered">
+<div id="splash" class="covered swap-about swap-item swap-zoom_out">
 	<div class="centered centered-full">
 		<div class="fs-row">
 			<div class="fs-cell fs-lg-4 fs-md-half fs-sm-2 fs-centered text-center">
@@ -10,7 +10,7 @@
 	</div>
 	<div id="splash-header" class="pinned pinned-top">
 		<div class="wrapper text-right">
-			<small><a class="swap swap-linked" data-swap-target="#about" data-swap-linked=".swap-linked" href="#">MORE INFO</a></small>
+			<small><a class="swap swap-linked" data-swap-target=".swap-about" data-swap-linked=".swap-linked" href="#">MORE INFO</a></small>
 		</div>
 	</div>
 	<div id="splash-footer" class="pinned pinned-bottom">
@@ -26,7 +26,7 @@
 	</div>
 </div>
 
-<div id="about" class="covered covered-fixed bg-color-orange swap-overlay">
+<div id="about" class="covered covered-fixed bg-color-orange swap-about swap-item swap-overlay swap-zoom_out swap-zoom_out-topLayer">
 	<div class="centered centered-full">
 		<div class="fs-row">
 			<div class="fs-cell fs-lg-7 fs-md-6 fs-sm-3 fs-centered text-center">
@@ -45,7 +45,7 @@
 	</div>
 	<div id="about-footer" class="pinned pinned-top">
 		<div class="wrapper text-right">
-			<small><a href="#" class="swap swap-linked color-white" data-swap-target="#about" data-swap-linked=".swap-linked">CLOSE</a></small>
+			<small><a href="#" class="swap swap-linked color-white" data-swap-target=".swap-about" data-swap-linked=".swap-linked">CLOSE</a></small>
 		</div>
 	</div>
 </div>
